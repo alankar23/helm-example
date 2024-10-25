@@ -1,0 +1,14 @@
+ingress:
+  name: dev-grpc-ingress
+  host: dev.myapps.com
+  secretName: idigicloud-local
+apps:
+  - path: /api/app-a
+    name: app-a
+    port: http
+  - path: /api/app-b
+    name: app-b
+    port: http
+  - path: /api/app-x
+    name: app-x
+    port: http
